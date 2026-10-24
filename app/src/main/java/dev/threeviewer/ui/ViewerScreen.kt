@@ -122,9 +122,11 @@ fun ViewerScreen(model: LoadedModel, back: () -> Unit, open: () -> Unit) {
                         else -> false
                     }
                 }.focusable())
-            if (!ready && !failed) Column(Modifier.align(Alignment.Center), horizontalAlignment = Alignment.CenterHorizontally) {
-                LoadingIndicator()
-                Text(stringResource(R.string.loading), Modifier.padding(top = 12.dp).semantics { liveRegion = LiveRegionMode.Polite })
+            if (!ready && !failed) Box(Modifier.fillMaxSize().background(bg), contentAlignment = Alignment.Center) {
+                Column(horizontalAlignment = Alignment.CenterHorizontally) {
+                    LoadingIndicator()
+                    Text(stringResource(R.string.loading), Modifier.padding(top = 12.dp).semantics { liveRegion = LiveRegionMode.Polite })
+                }
             }
             if (failed) Column(Modifier.align(Alignment.Center).padding(32.dp), horizontalAlignment = Alignment.CenterHorizontally,
                 verticalArrangement = Arrangement.spacedBy(20.dp)) {
