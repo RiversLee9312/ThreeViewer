@@ -1,0 +1,38 @@
+[
+  {
+    "id": "threeviewer",
+    "title": "ThreeViewer",
+    "license": "Apache-2.0",
+    "file": "threeviewer.txt"
+  },
+  {
+    "id": "androidx",
+    "title": "AndroidX",
+    "license": "Apache-2.0",
+    "file": "androidx.txt"
+  },
+  {
+    "id": "kotlin",
+    "title": "Kotlin & kotlinx",
+    "license": "Apache-2.0",
+    "file": "kotlin.txt"
+  },
+  {
+    "id": "support",
+    "title": "Guava & JSpecify",
+    "license": "Apache-2.0",
+    "file": "support.txt"
+  },
+  {
+    "id": "filament",
+    "title": "Filament",
+    "license": "Apache-2.0 \u00b7 BSD \u00b7 MIT \u00b7 Zlib",
+    "file": "filament.txt"
+  },
+  {
+    "id": "symbols",
+    "title": "Material Symbols",
+    "license": "Apache-2.0",
+    "file": "symbols.txt"
+  }
+]
